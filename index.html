@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-</head>
-<body>
+    <!-- Tailwind and DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/3dcc09348f.js" crossorigin="anonymous"></script>
     
+    <title>Fruit Burst</title>
+    <style>
+        .font-lato {
+            font-family: lato;
+        }
+    </style>
+</head>
+
+<body class="font-lato ">
+    <!-- navbar -->
+    <nav class=" max-w-[1440px] navbar justify-between  lg:bg-[#F85559] mx-auto my-8 rounded-[600px] py-5 px-10 ">
+
+        <div class=" justify-between hidden lg:flex">
+            <ul class="gap-7 menu-horizontal px-1 text-white font-medium text-lg">
+                <li><a class="hover:cursor-pointer">Home</a></li>
+                <li><a class="hover:cursor-pointer">About Us</a></li>
+                <li><a class="hover:cursor-pointer">Shop</a></li>
+                <li><a class="hover:cursor-pointer">All Fruits</a></li>
+            </ul>
+        </div>
+
+        <div class="space-x-4">
+            <img src="./images/logo.png" alt="" class="">
+            <h3 class="text-4xl font-bold lg:text-white">Fruit Burst</h3>
+        </div>
+        <div class="hidden lg:flex -mr-[200px] text-2xl ">
+            <input class="p-4 rounded-[600px] w-96 text-xl" type="search" placeholder="Search here">
+            <i class="fa-solid fa-magnifying-glass -ml-11 hover:cursor-pointer "></i>
+        </div>
+        
+
+        <!-- in medium and small size screen -->
+        <div class="dropdown">
+            <label tabindex="0" class="hover:cursor-pointer text-3xl  lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class=" dropdown-content mt-3 -ml-10 w-[90px] z-[1] p-2 shadow bg-base-100 rounded-xl ">
+                <li><a class="hover:cursor-pointer">Home</a></li>
+                <li><a class="hover:cursor-pointer">About Us</a></li>
+                <li><a class="hover:cursor-pointer">Shop</a></li>
+                <li><a class="hover:cursor-pointer">All Fruits</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar -->
+
 </body>
+
 </html>
